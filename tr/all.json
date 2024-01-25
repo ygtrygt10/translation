@@ -1,6 +1,7 @@
 {
   "LANGUAGE": {
     "LANGUAGE_WORD": "Dil",
+    "TRANSLATION_INFO_SETTINGS": "Çeviri hâlâ devam ediyor; İngilizce ile seçilen dilin bir karışımını göreceksiniz.<br> Okuyarak tercüme etmemize yardımcı olabilirsiniz.<guideLink> öğretici</guideLink> ve sonra bizim<editorLink> web editörü</editorLink> .",
     "TRANSLATION_IN_PROGRESS": "RemNote'un çevirisi hala devam ediyor. <0>Inlang'da</0> çevirilere katkıda bulunabilirsiniz."
   },
   "COMMON": {
@@ -19,12 +20,249 @@
   "SETTINGS": {
     "ACCOUNT": {
       "PROFILE_TITLE": "Profil",
+      "PROFILE": {
+        "KEYWORDS": "Kişisel Kullanıcı Profili"
+      },
       "IMPORT_EXPORT_TITLE": "İçe aktar ve dışa aktar",
+      "EXPORT_IMPORT": {
+        "KEYWORDS": "Yedeklemeyi Dışa Aktar Roam Dynalist'i Dışa Aktar Logseq Notion Evernote Obsidian"
+      },
       "NAVIGATION_TITLE": "Navigasyon",
+      "NAVIGATION": {
+        "KEYWORDS": "Çöp Kutusunu Dışa Aktar ve Yedekle Silinen Rem'leri Görüntüle Bilgi Tabanını İçe Aktar Tüm Kartları Görüntüle Günlük Yedekleme İndir Gelişmiş Ayarlar Tüm Rem'leri Sil"
+      },
       "AUTHENTICATION_TITLE": "Doğrulama",
+      "AUTHENTICATION": {
+        "KEYWORDS": "Oturumu kapat Oturumu kapat Google Giriş Yöntemi Ekle Bağlantıyı Kes Oturum Aç Kaydol"
+      },
       "ADVANCED_TITLE": "Gelişmiş Ayarlar",
+      "ADVANCED": {
+        "KEYWORDS": "Destek Arama Yeniden Bağlantı Hatasını Düzeltme"
+      },
       "DANGER_ZONE_TITLE": "Tehlikeli bölge",
-      "PRIVACY_NOTE": "Gizlilik: <policyLink>Gizlilik Politikamızı</policyLink> okuyun veya <hubLink>Gizlilik Merkezimizde</hubLink> ayarlarınızı değiştirin."
+      "PRIVACY_NOTE": "Gizlilik: <policyLink>Gizlilik Politikamızı</policyLink> okuyun veya <hubLink>Gizlilik Merkezimizde</hubLink> ayarlarınızı değiştirin.",
+      "DANGER_ZONE": {
+        "TITLE": "Tehlikeli bölge",
+        "KEYWORDS": "senkronizasyon günlüğü hesabı sil izlenecek yoldaki ilerlemeyi sıfırla ilk katılım gelişmiş hesap ayarlarını sıfırla"
+      },
+      "NOTIFICATIONS": {
+        "TITLE": "Mobil Seri Bildirimleri",
+        "DESCRIPTION": "Günlük bilgi kartı seriniz hakkında mobil push hatırlatıcıları gönderin. Hatırlatıcılar her gün yerel saat diliminize göre akşam 6'da gelir."
+      },
+      "SYNCING": {
+        "TITLE": "Senkronizasyon",
+        "KEYWORDS": "Görüntüleri ve PDF'leri Senkronize Etmeye Zorla"
+      },
+      "VERSION": {
+        "TITLE": "Uygulama sürümü",
+        "KEYWORDS": "versiyon"
+      },
+      "SUPPORT": {
+        "TITLE": "Destek",
+        "KEYWORDS": "destek bileti çalıştırma yardımı"
+      },
+      "PRIVACY": {
+        "TITLE": "Mahremiyet",
+        "KEYWORDS": "mahremiyet"
+      }
+    },
+    "FLASHCARDS": {
+      "DAILY_TARGET": {
+        "MAXIMUM_DAILY_TARGET": {
+          "TITLE": "Maksimum Günlük Hedef",
+          "DESCRIPTION": "Bilgi kartlarının sayısını sınırlayın RemNote, bu değerde günlük hedefinize ulaşmak için pratik yapmanızı isteyecektir."
+        },
+        "TODAYS_TARGET": "Bugünün Hedefi:",
+        "TODAYS_TARGET_EXPLANATION": "RemNote, günlük hedefinizi belirlemeye çalışır, böylece hedefe her gün ulaşırsanız, önümüzdeki 7 gün boyunca incelenmek üzere tüm kartları tamamlayacaksınız. Ancak günlük hedef hiçbir zaman yukarıda belirlenen maksimum değerden fazla olmayacaktır."
+      },
+      "GENERAL": {
+        "RESET_ALL": {
+          "TITLE": "Tüm Bilgi Kartı Ayarlarını Sıfırla",
+          "DESCRIPTION": "Tüm Flashcard ayarlarını varsayılan değerlerine sıfırlayın.",
+          "CONFIRM_MESSAGE": "Tüm bilgi kartı ayarlarını varsayılan değerlerine sıfırlamak istediğinizden emin misiniz?"
+        },
+        "NEW_CARDS_PER_DAY": {
+          "TITLE": "Günlük Maksimum Yeni Kart Sayısı",
+          "DESCRIPTION": "Her gün en fazla bu sayıda yeni oluşturulan bilgi kartını bilgi kartı sıranıza ekleyin. Bu şekilde, yeni kartlar sıranıza devasa bir grup yerine sabit bir günlük hızla girecektir."
+        },
+        "STALE_CARDS_PER_DAY": {
+          "TITLE": "Günlük Maksimum Eski Kart Sayısı",
+          "DESCRIPTION": "Her gün en fazla bu kadar eski bilgi kartını bilgi kartı sıranıza yeniden ekleyin. Eski kartlar, uzun süredir çalışmadığınız için geçici olarak sıraya alınmayan kartlardır ve hepsini bir anda yeniden öğrenmek yorucu olabilir."
+        },
+        "LEECH_THRESHOLD": {
+          "TITLE": "Sülük Eşiği",
+          "DESCRIPTION": "Sülükler, sürekli öğrenip sonra tekrar unuttuğunuz zor kartlardır. Bir kartın üzerinde \"unuttum\" tuşuna bundan daha fazla basarsanız, neden zorlandığınızı anlayıp sorunu çözebilmeniz için sizi uyaracağız. Sülük uyarısını daha az görmek için bunu daha yüksek değerlere ayarlayın."
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "TITLE": "İleri Sınırı Öğren",
+          "DESCRIPTION": "Kuyruğunuzun sonuna ulaştığınızda, RemNote size kartları vadeleri dolmadan bu kadar dakika önce gösterecektir, böylece kuyruğunuzu bitirdikten hemen sonra vadesi gelen kartlarla karşılaşmazsınız."
+        },
+        "AUTOPLAY_MEDIA": {
+          "TITLE": "Medyayı Otomatik Oynat",
+          "DESCRIPTION": "Bir bilgi kartını gösterirken, üzerindeki herhangi bir ses veya videoyu otomatik olarak oynatın."
+        },
+        "TYPE_ANSWER": {
+          "TITLE": "Cevabı yazın",
+          "DESCRIPTION": "Her bilgi kartının ön tarafında bir metin kutusu gösterin ve yazdıklarınızı kartın arkasındaki yanıtla karşılaştırın."
+        },
+        "SIMPLIFIED_FLASHCARD_BUTTONS": {
+          "TITLE": "Basitleştirilmiş Bilgi Kartı Düğmeleri",
+          "DESCRIPTION": "Bilgi kartlarını incelerken beş seçeneğin tümü yerine yalnızca \"Unuttum\" ve \"Çabalayarak geri çağrıldı\" yanıt düğmelerini gösterin."
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "TITLE": "Ertesi Gün Başlıyor",
+          "DESCRIPTION": "Her gün bu saatte kuyruğunuzda yeni kartlar beliriyor"
+        }
+      },
+      "VISUAL": {
+        "SHOW_NEXT_REVIEW_TIMES": {
+          "TITLE": "Sonraki İnceleme Zamanlarını Göster",
+          "DESCRIPTION": "Her cevap düğmesinde bir sonraki incelemeye kadar geçen süreyi gösterin."
+        }
+      },
+      "ORDERING": {
+        "DOCUMENT_CLUSTERS": {
+          "TITLE": "Belge Kümeleri",
+          "DESCRIPTION": "Bağlantılı belgelerden Rems'i birlikte çalışmayı tercih edin."
+        },
+        "REFERENCE_CLUSTERS": {
+          "TITLE": "Referans Kümeleri",
+          "DESCRIPTION": "Birbirine referans veren Remleri birlikte çalışmayı tercih edin."
+        },
+        "TAG_CLUSTERS": {
+          "TITLE": "Etiket Kümeleri",
+          "DESCRIPTION": "Rems'i aynı etiketle birlikte çalışmayı tercih edin."
+        },
+        "HIERARCHY_CLUSTERS": {
+          "TITLE": "Hiyerarşi Kümeleri",
+          "DESCRIPTION": "Birbiriyle ilişkili olan Remleri hiyerarşik olarak birlikte çalışmayı tercih edin."
+        }
+      },
+      "STATISTICS": {
+        "MAXIMUM_FLASHCARD_RESPONSE_TIME": {
+          "TITLE": "Maksimum Bilgi Kartı Yanıt Süresi",
+          "DESCRIPTION": "Bir bilgi kartını yanıtlamak bundan daha uzun sürerse (saniye cinsinden), geri kalan süreyi istatistiklerinizin dışında bırakın."
+        }
+      }
+    },
+    "KEYBOARD_SHORTCUTS": {
+      "SPLIT_WITH_ALT_ENTER": {
+        "TITLE": {
+          "PC": "Alt+Enter ile Böl",
+          "MAC": "Opt+Return ile Böl"
+        },
+        "DESCRIPTION": {
+          "PC": "Bir Rem'in ortasında Enter'a bastığınızda, o Rem'in içinde bir satır sonu oluşturun ve bunun yerine metni iki ayrı Rem'e bölmek için Alt+Enter tuşlarını kullanın. (Varsayılan olarak Shift+Enter ve Enter tek başına bu işlevleri yerine getirir.)",
+          "MAC": "Bir Rem'in ortasında Return tuşuna bastığınızda, o Rem içinde bir satır sonu oluşturun ve bunun yerine metni iki ayrı Rem'e bölmek için Opt+Return tuşlarını kullanın. (Varsayılan olarak, sırasıyla Shift+Return ve Return tek başına bu işlevleri yerine getirir.)"
+        }
+      },
+      "ENTER_TO_OUTDENT": {
+        "TITLE": "Çıkıntıyı artırmak için Enter'a basın",
+        "LABEL": "Belgenin en üst düzeyinde olmayan içeriğin bulunduğu bir Rem'de Enter tuşuna bastığınızda, bir düzey çıkıntı yapın. (Devre dışı ise aynı seviyede kalın ve boş bir Uzaklık bırakın.)"
+      },
+      "DOUBLE_SLASH_FOR_COMMAND_MENU": {
+        "TITLE": "Komut Menüsü İçin Çift Eğik Çizgi",
+        "DESCRIPTION": "Rems'i düzenlerken komutları tetiklemek için / yerine // yazın."
+      },
+      "DEFAULT_TO_LEGACY_KEYBOARD_SHORTCUTS": {
+        "TITLE": "Varsayılanı Eski Klavye Kısayollarına Ayarlayın",
+        "DESCRIPTION": "Varsayılan olarak eski klavye kısayollarını kullanın (Ağustos 2020 güncellemesinden önce)."
+      },
+      "CHANGE_KEYBOARD_SHORTCUTS": {
+        "TITLE": "Klavye Kısayollarını Değiştir",
+        "DESCRIPTION": "Tuş bağlamayı eşleyen klavye kısayollarını özelleştirin.",
+        "KEYWORDS": "klavye kısayollarını eşleştirme tuş bağlamayı özelleştirme"
+      }
+    },
+    "EDITOR": {
+      "GENERAL": {
+        "ENABLE_SPELLCHECK": {
+          "TITLE": "Yazım Denetimini Etkinleştir",
+          "DESCRIPTION": "Şu anda odaklanmış olan Rem'de yazım hataları olup olmadığını kontrol edin. Yazım denetimi, tarayıcınızda veya işletim sisteminizde seçilen dilleri kullanır."
+        },
+        "CAPITALIZE_FROM_SEARCH": {
+          "TITLE": "Aramadan Büyük Harf Kullanımı",
+          "DESCRIPTION": {
+            "PC": "Bir aramada Ctrl+Enter tuşlarına basarak bir Rem oluştururken adını büyük harfle yazın.",
+            "MAC": "Bir aramada Cmd+Return tuşlarına basarak bir Rem oluştururken adını büyük harfle yazın."
+          }
+        },
+        "CREATE_CONCEPTS_FROM_SEARCH": {
+          "TITLE": "Aramadan Kavramlar Oluşturun",
+          "DESCRIPTION": {
+            "PC": "Bir aramada Ctrl+Enter tuşlarına basarak bir Rem oluştururken onu bir Konsept haline getirin.",
+            "MAC": "Bir aramada Cmd+Return tuşlarına basarak bir Rem oluştururken onu bir Konsept haline getirin."
+          }
+        },
+        "CREATE_STUBS_FROM_SEARCH": {
+          "TITLE": "Aramadan Taslaklar Oluşturun",
+          "DESCRIPTION": {
+            "PC": "Bir aramada Ctrl+Enter tuşlarına basarak bir Rem oluştururken onu \"Saplama\" ile etiketleyin.",
+            "MAC": "Bir aramada Cmd+Return tuşlarına basarak bir Rem oluştururken bunu \"Saplama\" ile etiketleyin."
+          }
+        },
+        "INSERT_EMOJIS_AS_REFERENCES": {
+          "TITLE": "Emojiyi Referans Olarak Ekle",
+          "DESCRIPTION": "%% ile arama yaparken ve bir emoji seçerken referans olarak eklenecektir."
+        }
+      },
+      "DATES_AND_TIMES": {
+        "DATE_FORMATTING": {
+          "TITLE": "Tarih Biçimlendirmesi",
+          "DESCRIPTION": "/date ile eklenen Günlük Belge başlıklarını ve tarihlerini bu şekilde biçimlendirin."
+        },
+        "DATE_FORMATTING_CUSTOM": {
+          "TITLE": "Özel Tarih Biçimlendirmesi",
+          "DESCRIPTION": "Sunulan seçenekleri kullanarak tarihinizi istediğiniz gibi biçimlendirin."
+        },
+        "TIME_FORMATTING": {
+          "TITLE": "Zaman Biçimlendirmesi",
+          "DESCRIPTION": "/time ile eklenen saatleri bu şekilde biçimlendirin."
+        },
+        "WEEK_STARTS_ON_MONDAY": {
+          "TITLE": "Hafta Pazartesi Başlıyor",
+          "DESCRIPTION": "Tarih seçiciden tarih seçerken takvimdeki her satıra Pazar yerine Pazartesi ile başlayın."
+        }
+      }
+    },
+    "PLANS": {
+      "TITLE": "Planlar",
+      "KEYWORDS": "arkadaşlarını davet et plan aboneliği değiştir kredi kazan ücretsiz uzak not tweet gönder e-posta plan seç hayat boyu öğrenme profesyonel özellik dökümü fiyatlandırma seçenekleri"
+    },
+    "EARN_CREDIT": {
+      "TITLE": "Kredi Kazan",
+      "KEYWORDS": "arkadaşlarını davet et kredi planı kazan aboneliği değiştir kredi kazan ücretsiz uzak not tweet e-posta gönder plan seç hayat boyu öğrenme profesyonel özellik dökümü fiyatlandırma seçenekleri",
+      "INVITE_FRIENDS_REMNOTE": "Arkadaşlarınızı RemNote'a davet edin!",
+      "INVITE_FRIENDS_EARN_CREDIT": "Arkadaşlarınızı kredi kazanmaya davet edin! &lt;0&gt; {{monthlyPrice}} alacaksınız</0> Davet ettiğiniz kişi bir RemNote hesabına kaydolduğunda RemNote kredisinde ayrıca &lt;0&gt; {{monthlyPrice}} alacaklardır.</0> başlamak için kredi.",
+      "CREDIT_BALANCE": "Kredi dengesi",
+      "CREDIT_BALANCE_TEXT": "Var<bold> {{userCredit}}</bold> kalan ve kazandığınız kredi<bold> {{userCreditEarned}}</bold> toplam kredi. Ücretsiz olarak RemNote Pro'nun kalan ayı veya {{months}} .<br /><br /> Kredinizi kullanmaya başlamak için Pro'ya abone olun! Krediniz bitene kadar sizden ücret alınmayacaktır.",
+      "TOAST_SUBSCRIBE": "RemNote Pro'ya abone olduğunuzda kredileriniz otomatik olarak uygulanacaktır. Başlamak için aşağıdan bir plan seçin!",
+      "TOAST_RENEW": "Mevcut aboneliğiniz yenilendiğinde kredileriniz otomatik olarak uygulanacaktır.",
+      "APPLY_CREDIT": "Kredinizi uygulayın",
+      "INVITE_TEXT": "Arkadaşlarınızı davet edin ve kredi kazanın",
+      "HANG_ON": "Hatta beklemek",
+      "CREATE_ACCOUNT": "Arkadaşlarınızı davet etmek için bir hesap oluşturun"
+    },
+    "GLOBAL_INTERFACE": {
+      "SIMPLIFIED_UI": {
+        "TITLE": "Basitleştirilmiş kullanıcı arayüzü",
+        "LABEL": "Kullanıcı arayüzünü basitleştirin ve gelişmiş özellikleri gizleyin."
+      },
+      "IN_APP_SUGGESTIONS": {
+        "TITLE": "Belgenin Başına Ekleme İpuçları",
+        "LABEL": "Belgenizin üst kısmında deneyebileceğiniz RemNote özelliklerine ilişkin ipuçlarını gösterin.",
+        "KEYWORDS": "araç ipuçları desteğin öğrenilmesine yardımcı olur"
+      },
+      "LEFT_SIDEBAR_TUTORIALS": {
+        "TITLE": "Uygulama İçi Eğitimler",
+        "LABEL": "Şu anda kullanmakta olduğunuz RemNote özelliklerine ilişkin eğitimleri ekranın köşesinde gösterin.",
+        "KEYWORDS": "uygulama içi sol kenar çubuğu eğitimleri araç ipuçları, desteğin öğrenilmesine yardımcı olur"
+      },
+      "ONBOARDING_TIPS_SHORTCUTS": {
+        "TITLE": "Klavye Kısayolu İpuçları",
+        "LABEL": "Kullanmakta olduğunuz klavye kısayollarıyla ilgili ipuçlarını ekranın köşesinde gösterin.",
+        "KEYWORDS": "araç ipuçları desteğin öğrenilmesine yardımcı olur"
+      }
     }
   },
   "TAGS": {
